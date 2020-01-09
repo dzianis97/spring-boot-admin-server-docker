@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-boot-admin-server-docker
+  security:
+    user:
+      name: ${SPRING_BOOT_ADMIN_USER_NAME:admin}
+      password: ${SPRING_BOOT_ADMIN_USER_PASSWORD:admin}
+logging:
+  level:
+    org.springframework.security: INFO
